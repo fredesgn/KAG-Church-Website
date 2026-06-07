@@ -1,0 +1,98 @@
+/* Navbar */
+.navbar{
+position: absolute;
+top: 0;
+left: 0;
+width: 100;
+padding: 1.5rem 5rem;
+display: flex;
+justify-content: space-between;
+align-items: center;
+z-index: 100;
+box-sizing: border-box;
+}
+/* Logo Section */
+.logo-container{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.logo{
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+
+}
+/* Brand */
+.brand{
+    display: flex;
+    flex-direction: column;
+}
+.brand h2{
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: black;
+    line-height: 1;
+    flex-direction: column;
+}
+.brand span{
+    font-size: 0.8rem;
+    color: rgb(255, 255, 255, 0.8);
+}
+/* Navigation Links */
+.nav-links{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: 0.3s;
+}
+.nav-links a:hover{
+   opacity: 0.8;
+}
+/* CTA Button */
+.nav-btn{
+    border-radius: 5px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    background: white;
+    color: #044be4;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.nav-btn:hover{
+transform: translate(-2px);
+}
+/* Mobile */
+@media (max-width: 768px){
+.navbar{
+    padding: 20px;
+}
+.nav-links{
+    display: none;
+}
+.logo{
+width: 40px;
+height: 40px;
+}
+.brand span{
+   display: none;
+}
+.brand h2{
+    font-size: 1.5rem;
+}
+.nav-btn{
+    padding: 10px 18px;
+}
+}
